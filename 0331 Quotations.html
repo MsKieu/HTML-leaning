@@ -1,0 +1,80 @@
+<!--Sơ lược: Quotation (trích dẫn trực tiếp) & Citation (trích dẫn gián tiếp)
+thẻ <abbr> : cụm từ viết tắt (abbreviation)/ từ mới đc tạo từ viết tắt (acronym)
+thẻ <address> : thông tin liên lạc của tác giả
+thẻ <bdo> : hướng văn bản
+thẻ <blockquote> : một đoạn đc trích từ nguồn khác
+thẻ <cite> : tiêu đề của một cái gì (sách, tranh họa nổi tiếng, tác phẩm...)
+thẻ <q> : một sự trích dẫn ngắn -->
+<!DOCTYPE html>
+<html>
+    <body style="background-color:blanchedalmond">
+        <!-- thẻ blockquote định nghĩa một đoạn đc trích từ nguồn khác-->
+        <h2 style="text-align: center;">Ví dụ đoạn dùng thẻ blockquote</h2>
+        <p>Ví dụ một đoạn được dùng thẻ blockquote, có gắn link vào trong thẻ</p>
+        <blockquote cite="https://www.w3schools.com/html/html_quotation_elements.asp">
+            Trong bài học này học về blockquote, tức trích dẫn một đoạn văn thật dài<br> 
+            Trong bài học này học về blockquote, tức trích dẫn một đoạn văn thật dài<br>
+            Trong bài học này học về blockquote, tức trích dẫn một đoạn văn thật dài<br>
+            Trong bài học này học về blockquote, tức trích dẫn một đoạn văn thật dài<br>
+        </blockquote>
+
+        <p>Ví dụ một đoạn dùng thẻ blockquote, không gắn link vào trong thẻ</p>
+        <blockquote>
+            Trong bài học này học về blockquote, tức trích dẫn một đoạn văn thật dài<br> 
+            Trong bài học này học về blockquote, tức trích dẫn một đoạn văn thật dài<br>
+            Trong bài học này học về blockquote, tức trích dẫn một đoạn văn thật dài<br>
+            Trong bài học này học về blockquote, tức trích dẫn một đoạn văn thật dài<br>
+        </blockquote>
+        <!--CHECK Gắn link sau cite để người tạo sẽ chắc chắn nguồn trích dẫn hơn?-->
+
+        <!--thẻ <q> cho trích dẫn ngắn, nội dung trong thẻ được đặt trong dấu ngoặc kép-->
+        <h2 style="vertical-align:super">Thẻ q để định nghĩa một trích dẫn ngắn</h2>
+        <p>Mẹ tôi bảo <q>Phải béo lên vài cân nữa đi</q></p>
+        <p>Nhưng tôi hiểu mẹ muốn nói "Ăn uống giữ gìn sức khỏe vào"</p>
+
+        <!--thẻ abbr tức abbreviation
+            công thức: <abbr title="từ gốc">từ viết tắt</abbr>
+            nên kèm thuộc tính title để tiện cho việc mô tả cụm từ
+        giúp đưa thông tin hữu ích cho browsers, hệ thống dịch và công cụ tìm kiếm-->
+        <h2 style="vertical-align:baseline">Ví dụ với thẻ abr</h2>
+        <p>Cho đến bây giờ tôi vẫn chỉ biết <abbr title="Một Thành Viên">MTV</abbr> nghĩa là
+        <q>Một Thành Viên</q></p>
+        <p>Ngoài những từ như <abbr title="Do It Yourself">DIY</abbr> và
+        <abbr title="You Live Only Once">YOLO</abbr> ra thì tôi chưa biết thêm từ nào</p>
+
+        <!--Thẻ address cho thông tin liên lạc-->
+        <h2 style="color:cornflowerblue">Ví dụ thẻ address</h2>
+        <p>Thẻ address cho thông tin liên lạc của tác giả đoạn văn bản, bài viết</p>
+        <address>
+            Những dòng code này viết bởi tôi <br>
+            Một người đang chập chững gõ phím<br>
+            Địa chỉ: Gần ga hakata, phía trước là một con phố gió lồng lộng <br>
+        </address>
+        <p>Nếu đặt trong thẻ i thì <i>không có vẻ khác mấy</i></p>
+
+        <!--Thẻ cite cho các tác phẩm mang tính sáng tạo
+        (sách, thơ, phim, tranh vẽ, tượng,...)
+        CHECK không khác gì với thẻ i, thẻ em, thẻ address????-->
+        <h2>Với thẻ cite, các tác phẩm nghệ thuật sẽ dễ hiểu hơn</h2>
+        <img src="https://wallpaperaccess.com/full/5086362.jpg"
+         width="600" height="400" alt="Up - animation">
+         <p><cite>Up (2009)</cite> is a masterpiece of the Pixar - dùng thẻ cite</p>
+         <p><i>Up (2009)</i> is a masterpiece of the Pixar - dùng thẻ i</p>
+         <p>Thử nghiệm <address>Up (2009)</address> is a masterpiece of the Pixar - dùng thẻ address</p>
+         <!--NOTE nội dung trong thẻ address sẽ tách khỏi các nội dung khác
+        Còn nội dung trong thẻ cite và thẻ i sẽ vẫn viết liền dòng với các nội dung khác -->
+
+        <!--Thẻ bdo Bi-directional Override-->
+        <h2>Thẻ bdo để viết đè văn bản theo cả hai chiều trái-phải</h2>
+        <p>Một câu văn bình thường <em>A normal sentence</em> thì như này</p>
+        <bdo dir="rtl">Một câu văn bình thường <em>A normal sentence</em> thì như này</bdo><br>
+        <p><bdo dir="ltr">Một câu văn bình thường <em>A normal sentence</em> thì như này</bdo></p>
+
+        <!--NOTE thẻ bdo dùng cho kiểu ngôn ngữ viết từ phải sang trái
+        ví dụ tiếng Ả Rập, Hebrew-->
+        <p>חדשות, ידיעות מהארץ והעולם - עיתון הארץ</p>
+        <bdo dir="rtl">חדשות, ידיעות מהארץ והעולם - עיתון הארץ</bdo><br>
+        <bdo dir="ltr">חדשות, ידיעות מהארץ והעולם - עיתון הארץ</bdo>
+
+    </body>
+</html>

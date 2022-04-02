@@ -1,0 +1,76 @@
+<!--Sơ lược
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text-->
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Ví dụ đoạn văn paragraph</h2>
+        <!-- thẻ <b> bold để font chữ đậm lên -->
+        <p><b>長い道でのゴールを遂げるまでに一歩から始まる</b></p>
+        <p style="font-family:'Courier New', Courier, monospace;"><b>
+            Vừa đặt font Courier New, vừa đặt bold cho đậm</b></p>
+        <!--thẻ <strong> nhấn mạnh sự quan trọng-->
+        <p>Câu văn bình thường</p>
+        <p><b>Câu văn dùng thẻ bold</b></p>
+        <p><strong>Câu văn dùng thẻ strong</strong></p>
+        NOTE<!--2 thẻ đều ra hiển thị như nhau, 
+            thường sẽ dùng thẻ <b> nhiều hơn-->
+        <hr>
+
+        <!--thẻ <i> là italic, khi diễn tả thái độ giọng điệu thay thế
+            thẻ <em> emphasize là nhấn mạnh động tử -->
+        <h2 style="background-color:aquamarine">Ví dụ thẻ i và thẻ em</h2>
+        <p><i>Nội dung trong italic thì nghiêng nghiêng</i></p>
+        <p>Nếu chỉ <i>nghiêng một phần</i> thôi thì sao?</p>
+        <p><em>Nội dung trong emphasize thì luôn mang sắc thái nhấn mạnh</em></p>
+        <p>Nhưng nhấn <em>một cụm từ thôi</em> là đủ rồi</p>
+        NOTE<!--2 thẻ đều ra hiển thị như nhau,
+            thường sẽ dùng thẻ <i> nhiều hơn-->
+        
+        <!--thẻ small-->
+        <h2>Một tiêu đề bình thường như cân đường hộp sữa</h2>
+        <h2><small>Một tiêu đề không hề bình thường (đặt thẻ small)!</small></h2>
+        <p>Dòng này không đặt thẻ small hay font-size là small gì</p>
+        <p style="font-size:small">Đặt font-size là small</p>
+        <p><small>Đặt thẻ small</small></p>
+
+        <!--thẻ mark định nghĩa đoạn text cần được đánh dấu/ làm nổi bật-->
+        <h2>Thẻ mark highlight như thế nào?</h2>
+        <p>Mùa xuân<br>
+        Sakura <mark>nở rộ</mark><br>
+        Trắng một <mark><i>khoảng trởi</i></mark><br>
+        Vô thường<br>
+        </p>
+
+        <!--thẻ <del> gạch ngang đoạn text trong thẻ-->
+        <!--thẻ <ins> thì insert đoạn text, gạch chân dưới đoạn text ấy-->
+        <p>Thẻ del như <del>gạch đi</del> và viết lại</p>
+        <p>Trong khi đó ins <ins>gạch chân</ins> đoạn text</p>
+        <p>Bầu trời đầy mây <del>đen</del> <ins style="color:aqua;">xanh</ins></p>
+
+        <!--thẻ <sub> khiến text nhỏ đi một nửa, đặt ở nửa dưới dòng
+            thẻ <sup> khiến text nhỏ đi một nửa, đặt ở nửa trên dòng-->
+        <h3>Một đoạn thơ có cả <sub>subscripts</sub>
+        và <sup>superscripts</sup> bên trong</h3>
+
+        <pre style="font-size:20px">
+            Con chim sẻ <i>tóc xù</i>
+            Con chim sẻ của <mark>phố ta</mark>
+            Đừng <sub>buồn</sub> nữa nhá
+            
+            <ins style="background-color:burlywood;">Bác thợ mộc</ins>nói sai rồi
+            Nếu cuộc đời này <em>toàn</em> <sup>chuyện xấu xa</sup>
+            Tại sao cây táo lại <b style="font-size:larger;color:blueviolet">nở hoa</b>
+            Sao <sup>rãnh nước</sup> trong veo đến thế?
+        </pre>
+    </body>
+</html>

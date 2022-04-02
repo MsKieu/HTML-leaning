@@ -1,0 +1,58 @@
+<!--Tất cả HTML element đều có các thuộc tính (attributes)
+Thuộc tính cung cấp thông tin bổ sung về elements
+Thuộc tính luôn được chỉ định trong thẻ đầu (start tag)
+Thuộc tính luôn đi theo cặp name/value như sau: name="value"
+-->
+<!--Sơ lược
+đặc tính href của thẻ <a> : chỉ định link URL dẫn đến trang đó
+đặc tính src của thẻ <img> : chỉ định đường đi đến ảnh
+đặc tính width và heigth của thẻ <img> : cung cấp thông tin kích thước ảnh
+đặc tính alt của thẻ <img> : cung cấp văn bản thay thế cho ảnh
+đặc tính style : tạo thêm style cho một element, như màu, font chữ, size
+đặc tính lang của thẻ <html> : khai báo ngôn ngữ của webpage
+đặc tính title : thông tin bổ sung cho một element, chạm trỏ chuột mới thấy-->
+<!DOCTYPE html>
+<html>
+     <head> 
+          <title>Lesson05: Attributes (Thuộc tính)</title>        
+     </head>
+     <body>
+          <h2>Thuộc tính href (gắn link)</h2>
+               <p>
+               Linhks HTML được định nghĩa trong thẻ a <br>
+               Đường link URL được chỉ định trong thuộc tính href sau: <br> 
+               <a href="https://www.w3schools.com/html/html_attributes.asp">
+                    Phần giải thích về Attributes</a>
+               <!--Thẻ tag <a> định nghĩa một siêu kết nối (hyperlink)-->
+               </p>
+          <h2>Thuộc tính src (gắn ảnh)</h2>
+          <h2>Thuộc tính width và height (định dạng kích thước ảnh)</h2>
+               <p> 
+               Thẻ img dùng để nhúng một ảnh vào một trang HTML. <br>
+               Thuộc tính src chỉ định đường đến ảnh <br>
+               Thẻ img nên bao gồm thuộc tính width và height
+               để chỉ định kích thước ảnh ở pixels <br>
+               <img src="https://images.arigatotravel.com/wp-content/uploads/2019/02/27233953/sakura-mochi.jpg"
+               alt="Sakura mochi, món yêu thích của tôi!" width="600" height="400"
+               </p>
+               <!--2 cách chỉ định URL trong thuộc tính src
+               URL tuyệt đối: dẫn đến một website khác (dễ vi phạm bản quyền/ mất ảnh)
+               URL tương đối: dẫn đến ảnh trong website-->
+          <h2>Thuộc tính alt (văn bản thay thế ảnh)</h2>
+                    <p>
+                     Khi ảnh load chậm/
+                      có lỗi trong thuộc tính src khiến ảnh không hiện lên/
+                      người xem dùng screen reader <br>
+                     thì nhờ có thuộc tính alt, một text mô tả thay thế sẽ xuất hiện <br>
+                    </p>
+                    <img src="img_typo.jpg" alt="Sakura mochi, món yêu thích của tôi!">
+                    <!--Khi này, ảnh lỗi, và dòng text của alt sẽ hiện lên thay-->
+          <h2>Thuộc tính style</h2>
+                    <p style="color:green;">Dùng thuộc tính style 
+                         để định dạng màu, font, size, v.v của văn bản.</p>
+          <h2>Thuộc tính tooltip</h2>
+                    <p>Chạm trỏ chuột vào văn bản, sẽ hiển thị một chủ giải công cụ </p>
+                    <p title="Dòng này mang tính chất giải thích">Ví dụ của một tooltip</p>
+          
+     </body>
+</html>

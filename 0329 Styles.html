@@ -1,0 +1,54 @@
+<!--Sơ lược:
+Công thức: <tagname style="property:value;">
+    trong đó, property là CSS property, và value là CSS value
+Đặc tính style: thêm các kiểu tạo dáng vẻ ngoài cho elements
+background-color: cho màu ở background
+color cho màu của văn bản
+font-family cho kiểu font chữ của văn bản
+text-alignment : căn chỉnh vị trí đặt trái - giữa - phải của văn bản-->
+<!DOCTYPE html>
+<html>
+    <!--Đặt màu background cho cả một trang thì đặt ở thẻ body-->
+    <body style="background-color:powderblue;">
+    <!--Đặt màu background cho element nào thì đặt vào thẻ của element đó-->
+    <h2 style="background-color:beige">
+        Tiêu đề heading có màu background riêng</h2>
+    <p style="background-color:blanchedalmond">
+        Phần văn bản cũng có màu background riêng</p>
+    
+    <!--Đặt màu chữ-->   
+    <h2 style="color:chocolate;"> Tiêu đề có màu chữ chocolate</h2>
+    <p style="color:steelblue;">Văn bản đặt màu steelblue</p>
+
+    <!--Đặt font chữ-->
+    <h2 style="font-family:'Courier New', Courier, monospace;">Đặt font chữ Courier New</h2>
+    <p style="font-family:verdana;">Phông chữ này vừa lịch lãm vừa mềm mại</p>
+
+    <!--Chỉnh kích thước chữ + kèm đổi màu background/ màu chữ-->
+    <h2 style="background-color:burlywood; font-size:300%;">
+    Tiêu đề chỉnh kích thước chữ và thay màu background</h2>
+    <p style="color:cornflowerblue; font-size:160%">
+    Đoạn văn bản chỉnh kích thước chữ và thay màu chữ</p>
+
+    <!--Căn chỉnh vị trí văn bản bằng text-align-->
+    <h2 style="text-align:center;">Đặt tiêu đề ở giữa trung tâm</h2>
+    <p style="text-align:left;">Câu văn này thì cho dịch hẳn sang trái</p>
+    <p style="text-align:right;font-size:150%;">Câu văn này thì <br>
+    không những để sang phải <br>
+    mà còn <br>
+    dùng thẻ br cho ngắt ra <br>
+    và chỉnh kích thước to hơn!
+    </p>
+
+    <!--Căn chỉnh vị trí văn bản chiều dọc bằng vertical-align
+    công thức là vertical-aling:<value>
+    value gồm: baseline, sub, super, top, text-top, middle, bottom, tex-bottom-->
+    <h2 style="vertical-align:bottom">Đặt tiêu đề ở phía dưới đáy</h2>
+    <p style="vertical-align:super">Một câu văn ở vị trí super</p>
+    <p style="vertical-align:top">Một câu văn ở vị trí top, chắc sẽ không khác super là mấy</p>
+    <p style="vertical-align:sub">Sub thì tụt xuống dưới. ngược với super</p>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!--Sơ lược
+thẻ <p> paragraph định nghĩa đoạn văn
+thẻ <hr> horizontal xác định sự thay đổi chủ đề, đề mục
+thẻ <br> breakline ngắt xuống dòng
+thẻ <pre> bảo toàn định dạng có sẵn của đoạn text-->
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Ví dụ đoạn văn paragraph</h2>
+        <!-- thẻ p định nghĩa một đoạn văn paragraph
+        Sau thẻ p, một đoạn văn sẽ bắt đầu ở dòng mới,
+        trình duyệt tự động thêm lề margin trước và sau đoạn văn-->
+        <p>長い道でのゴールを遂げるまでに一歩から始まる</p>
+        <p>Số dòng trong đoạn văn, dù có chỉnh sửa thế nào trên source code,
+            thì trình duyệt cũng không quan tâm!
+        </p>
+        <p>Số dòng của một đoạn văn sẽ tùy thuộc vào cửa sổ trình duyệt <br>
+        Chỉnh kích thước cửa sổ trình duyệt, thì khi ấy
+        số dòng của đoạn văn mới thay đổi
+        </p>
+        <hr>
+
+        <!--thẻ hr (horizontal) xác định sự thay đổi chủ đề/ mục
+        thẻ hr không cần thẻ cuối -->
+        <h2>Ví dụ đổi chủ đề/ mục mới sau thẻ hr</h2>
+        <p>Thẻ hr horizontal, để ngăn cách các chủ đề, đề mục, không cần thẻ cuối</p>
+        <hr>
+
+        <h2>Chuyên mục thơ haiku</h2>
+        <!--thẻ br break, ngắt câu xuống dòng mới-->
+        <p>Mùa xuân<br>
+        Sakura nở rộ<br>
+        Trắng một khoảng trởi<br>
+        Vô thường<br>
+        </p>
+        <hr>
+
+        <h2>Thẻ pre giải quyết vấn đề trình bày thơ</h2>
+        <!--Thẻ pre (preformatted, được định dạng sẵn trước)
+        giúp bảo toàn định dạng của văn bản
+        như font chữ, khoảng cách, ngắt dòng-->
+
+        <h3>Nếu không có thẻ pre thì thơ sẽ như văn xuôi</h3>
+        <p>Con chim sẻ tóc xù
+            Con chim sẻ của phố ta
+            Đừng buồn nữa nhá
+            
+            Bác thợ mộc nói sai rồi
+            Nếu cuộc đời này toàn chuyện xấu xa
+            Tại sao cây táo lại nở hoa
+            Sao rãnh nước trong veo đến thế?
+        </p>
+
+        <h3>Nếu có thẻ pre, thì thơ sẽ được là thơ</h3>
+        <pre style="font-size:20px">
+            Con chim sẻ tóc xù
+            Con chim sẻ của phố ta
+            Đừng buồn nữa nhá
+            
+            Bác thợ mộc nói sai rồi
+            Nếu cuộc đời này toàn chuyện xấu xa
+            Tại sao cây táo lại nở hoa
+            Sao rãnh nước trong veo đến thế?
+        </pre>
+    </body>
+</html>
